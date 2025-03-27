@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import '../index.css';
 
 const initialValues = {
 	first_name: '',
@@ -40,7 +41,6 @@ function AddEditForm({ submitData, user = null }) {
 		<form onSubmit={handleSubmit}>
 			<div>
 				<label>
-					First Name:
 					<input
 						type="text"
 						name="first_name"
@@ -52,7 +52,6 @@ function AddEditForm({ submitData, user = null }) {
 			</div>
 			<div>
 				<label>
-					Last Name:
 					<input
 						type="text"
 						name="last_name"
@@ -64,7 +63,6 @@ function AddEditForm({ submitData, user = null }) {
 			</div>
 			<div>
 				<label>
-					Email:
 					<input
 						type="email"
 						name="email"
@@ -76,7 +74,6 @@ function AddEditForm({ submitData, user = null }) {
 			</div>
 			<div>
 				<label>
-					Password:
 					<input
 						type="password"
 						name="password"
@@ -88,7 +85,6 @@ function AddEditForm({ submitData, user = null }) {
 			</div>
 			<div>
 				<label>
-					Birthday:
 					<input
 						type="date"
 						name="birthday"
@@ -114,7 +110,6 @@ function AddEditForm({ submitData, user = null }) {
 			</div> */}
 			<div>
 				<label>
-					Image_url:
 					<input
 						type="url"
 						name="image_url"
@@ -124,7 +119,7 @@ function AddEditForm({ submitData, user = null }) {
 					/>
 				</label>
 			</div>
-			<button>{user ? 'Edit' : 'Add'}</button>
+			<button className="modal__button">{user ? 'Edit' : 'Add'}</button>
 			{user && (
 				<button onClick={() => setDataForm(initialValues)}>Cancel</button>
 			)}

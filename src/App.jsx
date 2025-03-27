@@ -54,9 +54,11 @@ function App() {
 
 	return (
 		<div>
-			<div>
-				<h1>App</h1>
-				<button onClick={showAddModal}>Add new user</button>
+			<div className="header">
+				<h1>App Users CRUD</h1>
+				<button className="add__button" onClick={showAddModal}>
+					Add new user
+				</button>
 			</div>
 
 			{users && (

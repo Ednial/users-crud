@@ -1,3 +1,44 @@
+.user__card {
+	background-color: #20dbd9;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 300px;
+	display: inline-block;
+}
+
+.user__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.user__name {
+	text-align: center;
+	color: #122a3a;
+}
+
+.user__email {
+	font-size: large;
+	color: #122a3a;
+}
+
+.user__birthday {
+	font-size: large;
+	color: #122a3a;
+}
+
+.user__image {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10px;
+	align-content: center;
+}
+
 .edit-icon {
 	color: #f50057;
 	cursor: pointer;
@@ -7,4 +48,9 @@
 .trash-icon {
 	color: #f50057;
 	cursor: pointer;
+}
+
+.user__actions {
+	display: flex;
+	justify-content: center;
 }
