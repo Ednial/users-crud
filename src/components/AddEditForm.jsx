@@ -18,7 +18,7 @@ function AddEditForm({ submitData, user = null }) {
 		if (user) {
 			setDataForm(user);
 		}
-	}, []);
+	}, [user]);
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
